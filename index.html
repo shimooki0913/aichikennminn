@@ -52,6 +52,20 @@
     }
     p{margin:0 0 8px 0;color:var(--muted)}
 
+    /* ギャラリーの画像配置 */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;       /* 幅が足りない場合は折り返す */
+      gap: 10px;             /* 画像の間隔 */
+      justify-content: center; /* 中央揃え */
+    }
+    .gallery img {
+      width: 180px;          /* 横幅を固定 */
+      height: 180px;         /* 高さを固定 */
+      object-fit: cover;     /* 枠いっぱいに収めてトリミング */
+      border-radius: 8px;    /* 角を丸く */
+    }
+
     footer{
       position:fixed;
       left:0;
@@ -99,7 +113,13 @@
     <section class="card">
       <h2>趣味</h2>
       <p>最近ハマっている趣味を深掘り</p>
-      <img src="https://i.pinimg.com/550x/e4/74/93/e4749380602e42261f8c1e60fccdf1cc.jpg" alt="サンプル"><img src="https://kpopping.com/documents/8b/1/800/240414-ILLIT-Yeonjun-at-Fansign-Event-documents-5.jpeg?v=b61f5" alt="サンプル"><img src="https://img-mdpr.freetls.fastly.net/article/Oeqk/wm/OeqkNmxc91IZYm92mwJNwc9M0CGBVU318nMJp-dnPHw.jpg" alt="サンプル"><img src="https://i.pinimg.com/originals/5d/96/71/5d96712decdf07ac0b25377dd421743f.jpg" alt="サンプル"><img src="https://sportsseoulweb.jp/files/user/2024/ic2024081514306134976591483534.jpg" alt="サンプル">
+      <div class="gallery">
+        <img src="https://i.pinimg.com/550x/e4/74/93/e4749380602e42261f8c1e60fccdf1cc.jpg" alt="サンプル1">
+        <img src="https://kpopping.com/documents/8b/1/800/240414-ILLIT-Yeonjun-at-Fansign-Event-documents-5.jpeg?v=b61f5" alt="サンプル2">
+        <img src="https://img-mdpr.freetls.fastly.net/article/Oeqk/wm/OeqkNmxc91IZYm92mwJNwc9M0CGBVU318nMJp-dnPHw.jpg" alt="サンプル3">
+        <img src="https://i.pinimg.com/originals/5d/96/71/5d96712decdf07ac0b25377dd421743f.jpg" alt="サンプル4">
+        <img src="https://sportsseoulweb.jp/files/user/2024/ic2024081514306134976591483534.jpg" alt="サンプル5">
+      </div>
     </section>
   </main>
 
@@ -120,9 +140,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
